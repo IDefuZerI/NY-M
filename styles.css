@@ -708,14 +708,17 @@ body {
 .romantic-title {
   font-size: clamp(22px, 4vw, 32px);
   font-weight: 600;
-  /* Making title more visible with stronger color and shadow */
-  color: var(--text-light);
-  text-shadow: 0 0 20px rgba(255, 0, 128, 0.8), 0 0 10px var(--neon-pink);
+  /* Making title much more visible with bright neon pink color and strong glow */
+  color: var(--neon-pink);
+  text-shadow: 0 0 30px var(--neon-pink), 0 0 60px var(--neon-pink), 0 0 90px rgba(255, 0, 128, 0.5), 0 2px 4px
+    rgba(0, 0, 0, 0.8);
   margin-bottom: 30px;
   text-align: center;
   line-height: 1.4;
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  display: block;
+  opacity: 1;
 }
 
 .heart-divider {
