@@ -708,10 +708,14 @@ body {
 .romantic-title {
   font-size: clamp(22px, 4vw, 32px);
   font-weight: 600;
-  color: var(--neon-pink);
-  text-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+  /* Making title more visible with stronger color and shadow */
+  color: var(--text-light);
+  text-shadow: 0 0 20px rgba(255, 0, 128, 0.8), 0 0 10px var(--neon-pink);
   margin-bottom: 30px;
   text-align: center;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
 }
 
 .heart-divider {
